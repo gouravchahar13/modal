@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: url(cap.jpg) no-repeat center center/cover;
+    height:100vh;
+}
+#open-btn{
+    position: absolute;
+    font-size: 1.5rem;
+    padding:0.5rem 0.5rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 1px solid yellow;
+    color:white;
+    top:70vh;
+    left:10vw;
+}
+#open-btn:hover{
+    background-color: darkgray;
+}
+#container{
+    position: absolute;
+    top:50vh;
+    left:30vh;
+    font-size: 1.05rem;
+    border:1px solid yellow;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20vw;
+    padding:0.5rem 0.5rem;
+    background-color: aqua;
+    display: none;
+    animation-name: falling;
+    animation-duration: 0.5s;
+    opacity: 12;
+}
+#close-btn{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+
+}
+#close-btn:hover{
+    color:red;
+    cursor:pointer
+}
+@keyframes falling{
+    from{
+        top:0%;
+        opacity: 0;
+
+    }
+    to{
+        top:50vh;
+        opacity:1;
+    }
+}
